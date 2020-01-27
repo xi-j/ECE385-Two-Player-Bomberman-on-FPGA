@@ -1,0 +1,1 @@
+Player1_go_down: X=150, Y=83 =>X=177, Y=130

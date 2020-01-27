@@ -1,0 +1,17 @@
+//------------------------------------------------------------------------------
+// Engineer:		 Jerry Wang & Xilin Jiang
+//
+// Create Date:    
+// Design Name:    Bomberman_final_project--Palettes
+// Module Name:    Palettes
+//
+// This module convert the 8_bit color to 24_bit color via Palettes
+//	
+//------------------------------------------------------------------------------
+
+module Palettes
+(
+	input []
+
+
+)

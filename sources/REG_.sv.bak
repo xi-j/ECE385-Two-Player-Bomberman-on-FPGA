@@ -1,0 +1,36 @@
+module REG_ #(parameter width)
+(
+	input logic [width-1:0]	Data_In,
+	input logic Clk,
+	input logic Reset,			//High active
+	input logic LD_Enable,		//High active
+	
+	output logic [width-1:0] Data_Out
+);
+
+
+always_ff @ (posedge Clk)
+	begin
+	
+	//Reset Case
+	if(Reset)
+		begin
+		Data_Out <= {width{1'b0}};
+		end
+	
+	//	Loading case
+	else if(LD_Enable)
+		begin
+		Data_Out <= Data_In;
+		end
+	
+	//Holding data case
+	else
+		begin
+		Data_Out <= Data_Out;
+		end
+		
+	end
+	
+endmodule
+

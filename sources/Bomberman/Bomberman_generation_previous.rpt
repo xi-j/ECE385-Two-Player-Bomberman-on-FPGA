@@ -1,0 +1,266 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate E:\Hello_Desktop\ECE385\Final_Project\Bomberman_Project\Bomberman_Project_3_0\Bomberman_Project\Bomberman.qsys --block-symbol-file --output-directory=E:\Hello_Desktop\ECE385\Final_Project\Bomberman_Project\Bomberman_Project_3_0\Bomberman_Project\Bomberman --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Bomberman_Project/Bomberman.qsys
+Progress: Reading input file
+Progress: Adding LEDs [altera_avalon_pio 18.1]
+Progress: Parameterizing module LEDs
+Progress: Adding audio_INIT [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_INIT
+Progress: Adding audio_INIT_F [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_INIT_F
+Progress: Adding audio_back_vol [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_back_vol
+Progress: Adding audio_bomb_active [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_bomb_active
+Progress: Adding audio_bomb_vol [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_bomb_vol
+Progress: Adding audio_select [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_select
+Progress: Adding avalon_blitter_0 [avalon_blitter 1.0]
+Progress: Parameterizing module avalon_blitter_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_qsys_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding otg_hpi_address [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_address
+Progress: Adding otg_hpi_cs [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_cs
+Progress: Adding otg_hpi_data [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_data
+Progress: Adding otg_hpi_r [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_r
+Progress: Adding otg_hpi_reset [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_reset
+Progress: Adding otg_hpi_w [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_w
+Progress: Adding player1Score0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module player1Score0
+Progress: Adding player1Score1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module player1Score1
+Progress: Adding player2Score0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module player2Score0
+Progress: Adding player2Score1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module player2Score1
+Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_pll_audio_pll [altpll 18.1]
+Progress: Parameterizing module sdram_pll_audio_pll
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding timeScreen0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module timeScreen0
+Progress: Adding timeScreen1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module timeScreen1
+Progress: Adding timeScreen2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module timeScreen2
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Bomberman.audio_INIT_F: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: Bomberman.avalon_blitter: The SIM_VERILOG fileset must specify the top-level module name.
+Info: Bomberman.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Bomberman.otg_hpi_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Bomberman.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: Bomberman.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: Bomberman.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate E:\Hello_Desktop\ECE385\Final_Project\Bomberman_Project\Bomberman_Project_3_0\Bomberman_Project\Bomberman.qsys --synthesis=VERILOG --output-directory=E:\Hello_Desktop\ECE385\Final_Project\Bomberman_Project\Bomberman_Project_3_0\Bomberman_Project\Bomberman\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Bomberman_Project/Bomberman.qsys
+Progress: Reading input file
+Progress: Adding LEDs [altera_avalon_pio 18.1]
+Progress: Parameterizing module LEDs
+Progress: Adding audio_INIT [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_INIT
+Progress: Adding audio_INIT_F [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_INIT_F
+Progress: Adding audio_back_vol [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_back_vol
+Progress: Adding audio_bomb_active [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_bomb_active
+Progress: Adding audio_bomb_vol [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_bomb_vol
+Progress: Adding audio_select [altera_avalon_pio 18.1]
+Progress: Parameterizing module audio_select
+Progress: Adding avalon_blitter_0 [avalon_blitter 1.0]
+Progress: Parameterizing module avalon_blitter_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_qsys_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding otg_hpi_address [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_address
+Progress: Adding otg_hpi_cs [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_cs
+Progress: Adding otg_hpi_data [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_data
+Progress: Adding otg_hpi_r [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_r
+Progress: Adding otg_hpi_reset [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_reset
+Progress: Adding otg_hpi_w [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_w
+Progress: Adding player1Score0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module player1Score0
+Progress: Adding player1Score1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module player1Score1
+Progress: Adding player2Score0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module player2Score0
+Progress: Adding player2Score1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module player2Score1
+Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_pll_audio_pll [altpll 18.1]
+Progress: Parameterizing module sdram_pll_audio_pll
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding timeScreen0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module timeScreen0
+Progress: Adding timeScreen1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module timeScreen1
+Progress: Adding timeScreen2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module timeScreen2
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Bomberman.audio_INIT_F: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: Bomberman.avalon_blitter: The SIM_VERILOG fileset must specify the top-level module name.
+Info: Bomberman.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Bomberman.otg_hpi_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Bomberman.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: Bomberman.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: Bomberman.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: Bomberman: Generating Bomberman "Bomberman" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src4 and cmd_mux_004.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src3 and cmd_mux_004.sink1
+Info: Inserting clock-crossing logic between rsp_demux_004.src0 and rsp_mux.sink4
+Info: Inserting clock-crossing logic between rsp_demux_004.src1 and rsp_mux_001.sink3
+Info: LEDs: Starting RTL generation for module 'Bomberman_LEDs'
+Info: LEDs:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Bomberman_LEDs --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0002_LEDs_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0002_LEDs_gen//Bomberman_LEDs_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDs: Done RTL generation for module 'Bomberman_LEDs'
+Info: LEDs: "Bomberman" instantiated altera_avalon_pio "LEDs"
+Info: audio_INIT: Starting RTL generation for module 'Bomberman_audio_INIT'
+Info: audio_INIT:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Bomberman_audio_INIT --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0003_audio_INIT_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0003_audio_INIT_gen//Bomberman_audio_INIT_component_configuration.pl  --do_build_sim=0  ]
+Info: audio_INIT: Done RTL generation for module 'Bomberman_audio_INIT'
+Info: audio_INIT: "Bomberman" instantiated altera_avalon_pio "audio_INIT"
+Info: audio_INIT_F: Starting RTL generation for module 'Bomberman_audio_INIT_F'
+Info: audio_INIT_F:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Bomberman_audio_INIT_F --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0004_audio_INIT_F_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0004_audio_INIT_F_gen//Bomberman_audio_INIT_F_component_configuration.pl  --do_build_sim=0  ]
+Info: audio_INIT_F: Done RTL generation for module 'Bomberman_audio_INIT_F'
+Info: audio_INIT_F: "Bomberman" instantiated altera_avalon_pio "audio_INIT_F"
+Info: audio_bomb_vol: Starting RTL generation for module 'Bomberman_audio_bomb_vol'
+Info: audio_bomb_vol:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Bomberman_audio_bomb_vol --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0005_audio_bomb_vol_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0005_audio_bomb_vol_gen//Bomberman_audio_bomb_vol_component_configuration.pl  --do_build_sim=0  ]
+Info: audio_bomb_vol: Done RTL generation for module 'Bomberman_audio_bomb_vol'
+Info: audio_bomb_vol: "Bomberman" instantiated altera_avalon_pio "audio_bomb_vol"
+Info: avalon_blitter_0: "Bomberman" instantiated avalon_blitter "avalon_blitter_0"
+Info: jtag_uart_0: Starting RTL generation for module 'Bomberman_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Bomberman_jtag_uart_0 --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0007_jtag_uart_0_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0007_jtag_uart_0_gen//Bomberman_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'Bomberman_jtag_uart_0'
+Info: jtag_uart_0: "Bomberman" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_qsys_0: "Bomberman" instantiated altera_nios2_gen2 "nios2_qsys_0"
+Info: otg_hpi_address: Starting RTL generation for module 'Bomberman_otg_hpi_address'
+Info: otg_hpi_address:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Bomberman_otg_hpi_address --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0008_otg_hpi_address_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0008_otg_hpi_address_gen//Bomberman_otg_hpi_address_component_configuration.pl  --do_build_sim=0  ]
+Info: otg_hpi_address: Done RTL generation for module 'Bomberman_otg_hpi_address'
+Info: otg_hpi_address: "Bomberman" instantiated altera_avalon_pio "otg_hpi_address"
+Info: otg_hpi_data: Starting RTL generation for module 'Bomberman_otg_hpi_data'
+Info: otg_hpi_data:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Bomberman_otg_hpi_data --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0009_otg_hpi_data_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0009_otg_hpi_data_gen//Bomberman_otg_hpi_data_component_configuration.pl  --do_build_sim=0  ]
+Info: otg_hpi_data: Done RTL generation for module 'Bomberman_otg_hpi_data'
+Info: otg_hpi_data: "Bomberman" instantiated altera_avalon_pio "otg_hpi_data"
+Info: player1Score0: Starting RTL generation for module 'Bomberman_player1Score0'
+Info: player1Score0:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Bomberman_player1Score0 --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0010_player1Score0_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0010_player1Score0_gen//Bomberman_player1Score0_component_configuration.pl  --do_build_sim=0  ]
+Info: player1Score0: Done RTL generation for module 'Bomberman_player1Score0'
+Info: player1Score0: "Bomberman" instantiated altera_avalon_pio "player1Score0"
+Info: sdram: Starting RTL generation for module 'Bomberman_sdram'
+Info: sdram:   Generation command is [exec E:/quartus_fpga_design/quartus/bin64/perl/bin/perl.exe -I E:/quartus_fpga_design/quartus/bin64/perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=Bomberman_sdram --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0011_sdram_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0011_sdram_gen//Bomberman_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'Bomberman_sdram'
+Info: sdram: "Bomberman" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sdram_pll_audio_pll: "Bomberman" instantiated altpll "sdram_pll_audio_pll"
+Info: sysid_qsys_0: "Bomberman" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: timer_0: Starting RTL generation for module 'Bomberman_timer_0'
+Info: timer_0:   Generation command is [exec E:/Quartus_FPGA_Design/quartus/bin64//perl/bin/perl.exe -I E:/Quartus_FPGA_Design/quartus/bin64//perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- E:/quartus_fpga_design/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=Bomberman_timer_0 --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0015_timer_0_gen/ --quartus_dir=E:/quartus_fpga_design/quartus --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0015_timer_0_gen//Bomberman_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'Bomberman_timer_0'
+Info: timer_0: "Bomberman" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_016: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_017: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_018: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_019: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_020: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_021: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_022: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_023: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_024: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_025: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_026: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Bomberman" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "Bomberman" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "Bomberman" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'Bomberman_nios2_qsys_0_cpu'
+Info: cpu:   Generation command is [exec E:/Quartus_FPGA_Design/quartus/bin64//eperlcmd.exe -I E:/Quartus_FPGA_Design/quartus/bin64//perl/lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin/europa -I E:/quartus_fpga_design/quartus/sopc_builder/bin/perl_lib -I E:/quartus_fpga_design/quartus/sopc_builder/bin -I E:/quartus_fpga_design/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I E:/quartus_fpga_design/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I E:/quartus_fpga_design/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I E:/quartus_fpga_design/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- E:/quartus_fpga_design/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Bomberman_nios2_qsys_0_cpu --dir=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0018_cpu_gen/ --quartus_bindir=E:/Quartus_FPGA_Design/quartus/bin64/ --verilog --config=C:/Users/Jerry-H/AppData/Local/Temp/alt8237_935430890966272533.dir/0018_cpu_gen//Bomberman_nios2_qsys_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.12.06 18:21:39 (*) Starting Nios II generation
+Info: cpu: # 2019.12.06 18:21:39 (*)   Checking for plaintext license.
+Info: cpu: # 2019.12.06 18:21:41 (*)   Couldn't query license setup in Quartus directory E:/Quartus_FPGA_Design/quartus/bin64/
+Info: cpu: # 2019.12.06 18:21:41 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2019.12.06 18:21:41 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2019.12.06 18:21:41 (*)   Plaintext license not found.
+Info: cpu: # 2019.12.06 18:21:41 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2019.12.06 18:21:41 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.12.06 18:21:41 (*)   Creating all objects for CPU
+Info: cpu: # 2019.12.06 18:21:44 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.12.06 18:21:44 (*)   Creating plain-text RTL
+Info: cpu: # 2019.12.06 18:21:46 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'Bomberman_nios2_qsys_0_cpu'
+Info: cpu: "nios2_qsys_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_qsys_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_qsys_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file E:/Hello_Desktop/ECE385/Final_Project/Bomberman_Project/Bomberman_Project_3_0/Bomberman_Project/Bomberman/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/Hello_Desktop/ECE385/Final_Project/Bomberman_Project/Bomberman_Project_3_0/Bomberman_Project/Bomberman/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file E:/Hello_Desktop/ECE385/Final_Project/Bomberman_Project/Bomberman_Project_3_0/Bomberman_Project/Bomberman/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: Bomberman: Done "Bomberman" with 39 modules, 55 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

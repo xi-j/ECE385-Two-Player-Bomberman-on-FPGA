@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Dec 10 20:23:19 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Bomberman
+Top-level Entity Name : Bomberman_top
+Family : Cyclone IV E
+Total logic elements : 9,070
+    Total combinational functions : 6,078
+    Dedicated logic registers : 5,312
+Total registers : 5312
+Total pins : 264
+Total virtual pins : 0
+Total memory bits : 2,726,912
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 2

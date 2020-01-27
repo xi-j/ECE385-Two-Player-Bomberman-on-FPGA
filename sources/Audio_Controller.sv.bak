@@ -1,0 +1,18 @@
+module Audio_Controller
+(
+	//General
+	input 	logic	 				Clk, Reset,
+
+	//Flash Memory
+	output 	logic [22:0]		FL_ADDR,
+	inout	 	logic [7:0]			FL_DQ,
+	output 	logic 				FL_WE_N, FL_OE_N, FL_CE_N, FL_RST_N,
+	output 	logic 				FL_WP_N,
+	input 	logic 				FL_RY,
+	
+	//Audio Interface
+	
+
+
+
+);

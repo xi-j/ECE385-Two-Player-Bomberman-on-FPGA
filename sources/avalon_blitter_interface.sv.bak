@@ -1,0 +1,70 @@
+//------------------------------------------------------------------------------
+// Engineer:		 Jerry Wang
+//
+// Create Date:    
+// Design Name:    Bomberman_final_project--avalon_blitter_interface 
+// Module Name:    avalon_blitter_interface
+//
+// Comments:
+//    Revised 11-07-2019
+// 
+//	This is the interface connecting the NIOS-II with the Blitter 
+//	It provide the buffer for NIOS-II to put blitter instructions 
+//	and the blitter will take the instruction to conduct 2D memory
+//	copy.
+//	
+//	The register buffer size is tempoeraily set to 8, a.k.a we have 
+//	8 groups of registers units. Each unit will have two data registers
+//	and one status register. It will also have a global status register
+//	to flag whether the NIOS-II have emit all the draw instructions.
+//------------------------------------------------------------------------------
+
+
+module avalon_blitter_interface 
+(
+	// Avalon Clock Input
+	input logic CLOCK,
+	
+	// Avalon Reset Input
+	input logic RESET,
+	//	All controls are high acive
+	// Avalon-MM Slave Signals
+	input  logic AVL_READ,					// Avalon-MM Read
+	input  logic AVL_WRITE,					// Avalon-MM Write
+	input  logic AVL_CS,						// Avalon-MM Chip Select
+	input  logic [3:0] AVL_BYTE_EN,		// Avalon-MM Byte Enable
+	input  logic [3:0] AVL_ADDR,			// Avalon-MM Address
+	input  logic [31:0] AVL_WRITEDATA,	// Avalon-MM Write Data
+	output logic [31:0] AVL_READDATA,	// Avalon-MM Read Data
+	
+	// Exported Conduit
+	output logic [31:0] EXPORT_DATA		// Exported status register to monitor
+
+);
+
+	
+
+
+
+
+
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

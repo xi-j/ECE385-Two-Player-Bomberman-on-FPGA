@@ -1,0 +1,42 @@
+	Bomberman u0 (
+		.audio_back_vol_export     (<connected-to-audio_back_vol_export>),     //     audio_back_vol.export
+		.audio_bomb_active_export  (<connected-to-audio_bomb_active_export>),  //  audio_bomb_active.export
+		.audio_bomb_vol_export     (<connected-to-audio_bomb_vol_export>),     //     audio_bomb_vol.export
+		.audio_init_export         (<connected-to-audio_init_export>),         //         audio_init.export
+		.audio_init_f_export       (<connected-to-audio_init_f_export>),       //       audio_init_f.export
+		.audio_select_export       (<connected-to-audio_select_export>),       //       audio_select.export
+		.clk_clk                   (<connected-to-clk_clk>),                   //                clk.clk
+		.export_data_new_signal    (<connected-to-export_data_new_signal>),    //        export_data.new_signal
+		.export_data_new_signal_1  (<connected-to-export_data_new_signal_1>),  //                   .new_signal_1
+		.export_data_new_signal_2  (<connected-to-export_data_new_signal_2>),  //                   .new_signal_2
+		.export_data_new_signal_3  (<connected-to-export_data_new_signal_3>),  //                   .new_signal_3
+		.export_data_new_signal_4  (<connected-to-export_data_new_signal_4>),  //                   .new_signal_4
+		.led_wire_export           (<connected-to-led_wire_export>),           //           led_wire.export
+		.otg_hpi_address_export    (<connected-to-otg_hpi_address_export>),    //    otg_hpi_address.export
+		.otg_hpi_cs_export         (<connected-to-otg_hpi_cs_export>),         //         otg_hpi_cs.export
+		.otg_hpi_data_in_port      (<connected-to-otg_hpi_data_in_port>),      //       otg_hpi_data.in_port
+		.otg_hpi_data_out_port     (<connected-to-otg_hpi_data_out_port>),     //                   .out_port
+		.otg_hpi_r_export          (<connected-to-otg_hpi_r_export>),          //          otg_hpi_r.export
+		.otg_hpi_reset_export      (<connected-to-otg_hpi_reset_export>),      //      otg_hpi_reset.export
+		.otg_hpi_w_export          (<connected-to-otg_hpi_w_export>),          //          otg_hpi_w.export
+		.player1score0_wire_export (<connected-to-player1score0_wire_export>), // player1score0_wire.export
+		.player1score1_wire_export (<connected-to-player1score1_wire_export>), // player1score1_wire.export
+		.player2score0_wire_export (<connected-to-player2score0_wire_export>), // player2score0_wire.export
+		.player2score1_wire_export (<connected-to-player2score1_wire_export>), // player2score1_wire.export
+		.reset_reset_n             (<connected-to-reset_reset_n>),             //              reset.reset_n
+		.sdram_pll_clk             (<connected-to-sdram_pll_clk>),             //          sdram_pll.clk
+		.sdram_wire_addr           (<connected-to-sdram_wire_addr>),           //         sdram_wire.addr
+		.sdram_wire_ba             (<connected-to-sdram_wire_ba>),             //                   .ba
+		.sdram_wire_cas_n          (<connected-to-sdram_wire_cas_n>),          //                   .cas_n
+		.sdram_wire_cke            (<connected-to-sdram_wire_cke>),            //                   .cke
+		.sdram_wire_cs_n           (<connected-to-sdram_wire_cs_n>),           //                   .cs_n
+		.sdram_wire_dq             (<connected-to-sdram_wire_dq>),             //                   .dq
+		.sdram_wire_dqm            (<connected-to-sdram_wire_dqm>),            //                   .dqm
+		.sdram_wire_ras_n          (<connected-to-sdram_wire_ras_n>),          //                   .ras_n
+		.sdram_wire_we_n           (<connected-to-sdram_wire_we_n>),           //                   .we_n
+		.timescreen0_wire_export   (<connected-to-timescreen0_wire_export>),   //   timescreen0_wire.export
+		.timescreen1_wire_export   (<connected-to-timescreen1_wire_export>),   //   timescreen1_wire.export
+		.timescreen2_wire_export   (<connected-to-timescreen2_wire_export>),   //   timescreen2_wire.export
+		.boot_up_export            (<connected-to-boot_up_export>)             //            boot_up.export
+	);
+

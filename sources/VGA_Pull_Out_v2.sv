@@ -1,0 +1,108 @@
+//------------------------------------------------------------------------------
+// Engineer:		 Jerry Wang & Xilin Jiang
+//
+// Create Date:    
+// Design Name:    Bomberman_final_project--Blitter
+// Module Name:    Blitter
+//
+// Comments:
+//    Revised 11-09-2019
+//
+//	Version:	V.Beta
+//
+//	This is the module that work together with the VGA_controller to handle the 
+//	Pixel output 
+//------------------------------------------------------------------------------
+
+module VGA_Pull_Out_v2	#(parameter BufferWidth = 10'd640, parameter BufferHeight = 10'd480)
+(
+	input  logic 			VGA_Clk,
+	input  logic 			Reset,
+	
+	output logic [17:0]	VGA_R_ADDR,	
+	input  logic [15:0]	VGA_R_DQ,				//
+	
+	input  logic [9:0]	DrawX,DrawY,        // horizontal coordinate
+	
+   output logic [7:0] VGA_R, VGA_G, VGA_B // VGA RGB output
+);
+	
+	logic [17:0]	H_counter,V_counter,H_counter_next,V_counter_next;	//count from 0 to target
+	
+	
+	always_ff @ (posedge VGA_Clk) begin
+		
+		if (Reset) begin
+			H_counter <= 10'd0;
+			V_counter <= 10'd0;
+		end
+		
+		else begin
+			H_counter <= H_counter_next;
+			V_counter <= V_counter_next;
+		end
+	end
+	
+	//Shift the DrawX to get prepare in advanced
+	logic [9:0]	DrawX_S;
+	
+	always_comb begin
+		if (DrawX == 10'd797)
+			DrawX_S = 10'd0;
+		else if(DrawX == 10'd798)
+			DrawX_S = 10'd1;
+		else if (DrawX == 10'd799)
+			DrawX_S = 10'd2;
+		else
+			DrawX_S = DrawX + 10'd3;
+	end
+	
+	
+	always_comb begin
+		//Horizontal counter
+		if ((DrawX_S < 10'd640) && (DrawY < 10'd480))
+			H_counter_next = DrawX_S >> 1;
+		else 
+			H_counter_next = 18'd0;
+			
+		//Vertical counter
+		if ((DrawY < 10'd480) && (DrawX_S == 10'd640))	//Prepare in advance
+			V_counter_next = DrawY + 1'd1;
+		else if (DrawY == 10'd480)
+			V_counter_next = 18'd0;			//Backto 
+		else
+			V_counter_next = V_counter;
+		
+	end
+	
+	//Final Address 
+	assign VGA_R_ADDR = H_counter + V_counter * (BufferWidth >> 1);
+
+	logic Bytes_counter;
+	assign Bytes_counter = DrawX_S[0];
+	
+	logic [7:0]	To_P;
+	logic [7:0]	B1_Reg_Out,B0_Dir_Out;
+	
+	//Choosing the right Bytes
+	always_comb begin
+		case (Bytes_counter)
+			1'd0: To_P = B0_Dir_Out;			//Sequential circuit, counter = 1 get data and output the B0 then B1
+			1'd1: To_P = B1_Reg_Out;
+		endcase
+	end
+
+	//Data from Buffer assignment
+	assign B0_Dir_Out = VGA_R_DQ[15:8];
+	
+	REG_ #(8)	P1(.Clk(VGA_Clk), .Reset(Reset), .Data_In(VGA_R_DQ[7:0]), .Data_Out(B1_Reg_Out), .LD_Enable(1'b1));	//Always enable
+
+	
+	Palettes	Palettes0 (.Clk(VGA_Clk), .RGB_8(To_P), .R_24(VGA_R), .G_24(VGA_G), .B_24(VGA_B));
+
+	
+endmodule
+
+
+
+

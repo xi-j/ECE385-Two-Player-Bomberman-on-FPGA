@@ -1,0 +1,46 @@
+module avalon_audio_interface
+(
+	input logic CLOCK,
+	
+	// Avalon Reset Input
+	input logic RESET,
+	//	All controls are high acive
+	// Avalon-MM Slave Signals
+	input  logic AVL_WRITE,					// Avalon-MM Write
+	input  logic AVL_CS,						// Avalon-MM Chip Select
+
+	input  logic 		  AVL_ADDR,			// Avalon-MM Address				
+	input  logic [15:0] AVL_WRITEDATA,	// Avalon-MM Write Data
+	
+	output 	logic [31:0] 	Audio_fifo_Out,
+	input 	logic 			Audio_DQ_Require
+	
+	
+);
+	
+	logic full,almost_empty;
+	logic [15:0]	fifo_out_L,fifo_out_R;
+	logic 			fifo_L_LD, fifo_R_LD;
+	
+	assign fifo_L_LD = AVL_CS & AVL_WRITE & (~AVL_ADDR[0]);
+	assign fifo_R_LD = AVL_CS & AVL_WRITE & (AVL_ADDR[0]);
+	
+	assign Audio_fifo_Out = {fifo_out_L,fifo_out_R};
+	
+	
+	fifo	audio_bufferL (.clock(CLOCK), .data(AVL_WRITEDATA), .wrreq(fifo_L_LD), .full(full),
+								.almost_empty(almost_empty), .q(fifo_out_L), .rdreq(Audio_DQ_Require));
+	
+	fifo	audio_bufferL (.clock(CLOCK), .data(AVL_WRITEDATA), .wrreq(fifo_R_LD), .full(full),
+								.almost_empty(almost_empty), .q(fifo_out_R), .rdreq(Audio_DQ_Require));
+	
+	
+	
+				
+	
+
+
+
+
+endmodule
+

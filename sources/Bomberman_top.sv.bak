@@ -1,0 +1,32 @@
+/************************************************************************
+Lab 9 Quartus Project Top Level
+
+Dong Kai Wang, Fall 2017
+Christine Chen, Fall 2013
+
+For use with ECE 385 Experiment 9
+University of Illinois ECE Department
+************************************************************************/
+
+module Bomberman_top (
+	input  logic        CLOCK_50,
+	input  logic [1:0]  KEY,
+	output logic [7:0]  LEDG,
+	output logic 		  LEDR,
+	
+	output logic [12:0] DRAM_ADDR,
+	output logic [1:0]  DRAM_BA,
+	output logic        DRAM_CAS_N,
+	output logic        DRAM_CKE,
+	output logic        DRAM_CS_N,
+	inout  logic [31:0] DRAM_DQ,
+	output logic [3:0]  DRAM_DQM,
+	output logic        DRAM_RAS_N,
+	output logic        DRAM_WE_N,
+	output logic        DRAM_CLK
+);
+
+
+
+endmodule
+

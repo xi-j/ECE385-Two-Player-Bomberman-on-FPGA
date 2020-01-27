@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Tue Dec 10 16:45:11 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Bomberman
+Top-level Entity Name : Bomberman_top
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Power Models : Final
+Total Thermal Power Dissipation : 310.64 mW
+Core Dynamic Thermal Power Dissipation : 72.15 mW
+Core Static Thermal Power Dissipation : 106.16 mW
+I/O Thermal Power Dissipation : 132.32 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data
